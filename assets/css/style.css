@@ -1,0 +1,547 @@
+:root {
+    /* Pattern 2 - Creative Voice (Modern) */
+    --primary-color: #6C4AB6;
+    /* Royal Purple */
+    --secondary-color: #FFB703;
+    /* Golden Accent */
+    --tertiary-color: #0F172A;
+    /* Dark Slate */
+    --body-bg: #FFFFFF;
+    --text-color: #333333;
+    --card-bg: #F8F9FA;
+    --border-color: #E9ECEF;
+    --navbar-bg: #FFFFFF;
+    --navbar-text: #333333;
+
+    /* New Subtle Backgrounds */
+    --bg-theme-subtle: #F3F0FF;
+    /* Very light purple tint */
+
+    /* Transition */
+    --transition: all 0.3s ease;
+
+    /* Updated Fonts */
+    --font-heading: 'Sora', sans-serif;
+    --font-body: 'Source Sans 3', sans-serif;
+
+    /* Footer Background (Fixed for Dark Mode) */
+    --footer-bg: #0F172A;
+
+    /* Sidebar Background */
+    --sidebar-bg: #0F172A;
+}
+
+[data-theme="dark"] {
+    --primary-color: #A78BFA;
+    /* Lighter Polyester Purple */
+    --secondary-color: #FCD34D;
+    /* Lighter Gold */
+    --tertiary-color: #F8FAFC;
+    /* Light Text */
+    --body-bg: #0F172A;
+    --text-color: #F1F5F9;
+    --card-bg: #1E293B;
+    --border-color: #334155;
+    --navbar-bg: #0F172A;
+    --navbar-text: #F8FAFC;
+    --bg-theme-subtle: #162036;
+
+    /* Ensure Footer stays dark in dark mode */
+    --footer-bg: #020617;
+
+    /* Sidebar Background (Dark Mode) */
+    --sidebar-bg: #020617;
+}
+
+/* Dark Mode Overrides for Bootstrap Utilities */
+[data-theme="dark"] .bg-light,
+[data-theme="dark"] .bg-light-subtle {
+    background-color: #162036 !important;
+}
+
+[data-theme="dark"] .text-muted {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .text-secondary {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .border {
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: rgba(167, 139, 250, 0.2);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .accordion-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control {
+    background-color: #334155;
+    border-color: #475569;
+    color: #fff;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: #94A3B8;
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: #334155;
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Navbar Toggler Dark Mode Fix */
+[data-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+[data-theme="dark"] .nav-link.active {
+    color: var(--secondary-color) !important;
+    font-weight: 700;
+}
+
+/* Global Reset & Typography */
+body {
+    font-family: var(--font-body);
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+/* ... existing code ... */
+
+/* New Utility Class */
+.bg-theme-subtle {
+    background-color: var(--bg-theme-subtle) !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #0F172A;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--navbar-bg);
+    padding: 1.25rem 0;
+    /* Slightly reduced padding to offset larger logo */
+    transition: var(--transition);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* Premium subtle shadow */
+}
+
+/* Navigation & Brand Alignment */
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--navbar-text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Reduced gap to prevent overflow */
+}
+
+.navbar-brand img {
+    height: 45px;
+    /* Reduced height to fit smaller screens */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+    /* Subtle interaction effect */
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    /* Increased from 1.25rem */
+    font-weight: 800;
+    color: var(--navbar-text);
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.brand-subtitle {
+    font-size: 0.85rem;
+    /* Increased from 0.75rem */
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* Increased spacing for premium look */
+}
+
+/* Nav Link Alignment */
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* Ensure full height for vert alignment */
+}
+
+/* Equal Button Sizes */
+.nav-btn {
+    width: 90px;
+    height: 38px;
+    padding: 0;
+    /* Remove horizontal padding to rely on width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 6px;
+    /* Consistent rounding */
+}
+
+/* Theme Toggle Alignment */
+.theme-toggle-btn {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+
+.brand-subtitle {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Footer Logo Adjustment */
+footer .navbar-brand {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer .brand-title {
+    color: #fff;
+}
+
+
+
+.nav-link {
+    color: var(--navbar-text);
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Theme Toggle */
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--navbar-text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('../img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax effect */
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+    /* Light gray for subtitle */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cards & Services */
+.service-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.pricing-card-popular {
+    background: linear-gradient(to bottom right, #fdfbf7, #ffffff);
+}
+
+[data-theme="dark"] .pricing-card-popular {
+    background: linear-gradient(to bottom right, #1E293B, #0F172A);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(108, 74, 182, 0.1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Narrator Audio Player */
+.audio-player-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    color: #F8FAFC;
+    padding: 60px 0 20px;
+}
+
+footer a {
+    color: #CBD5E1;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+footer h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Sidebar */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    width: 100%;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: var(--sidebar-bg);
+    color: #fff;
+    padding: 20px;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+/* Sidebar Brand Specifics */
+.sidebar .navbar-brand .brand-title {
+    color: #fff !important;
+}
+
+.sidebar .navbar-brand .brand-subtitle {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.sidebar-nav .nav-link {
+    color: #CBD5E1;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Map Filter */
+.filter-grayscale {
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.filter-grayscale:hover {
+    filter: grayscale(0%);
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: var(--body-bg);
+    padding: 30px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .sidebar {
+        position: fixed;
+        left: -280px;
+        top: 0;
+        bottom: 0;
+        z-index: 1050;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .main-content {
+        padding: 15px;
+        /* Reduce padding for mobile */
+    }
+}
+
+/* Extra Small Devices (Fix for 300-400px widths) */
+@media (max-width: 450px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+
+    .brand-title {
+        font-size: 1.1rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+
+    .navbar-brand {
+        gap: 6px;
+    }
+
+    .theme-toggle-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        margin-left: 0 !important;
+        /* Override bootstrap margins if any */
+    }
+
+    .navbar-toggler {
+        padding: 4px 8px;
+        font-size: 1rem;
+    }
+
+    /* Reduce gap between Theme Toggle and Toggler */
+    .d-flex.align-items-center.gap-2.order-lg-last {
+        gap: 4px !important;
+    }
+}

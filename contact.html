@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect | AudioStudio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <style>
+        .split-layout {
+            min-height: calc(100vh - 76px);
+            /* Minus navbar height approx */
+        }
+
+        .contact-image {
+            background: url('https://placehold.co/800x1200/6C4AB6/FFFFFF?text=Studio+Session') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .contact-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(15, 23, 42, 0.4);
+        }
+
+        .contact-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Sticky) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="AudioStudio">
+                <div class="brand-text">
+                    <span class="brand-title">Audio</span>
+                    <span class="brand-subtitle">Studio</span>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Voices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Connect</a></li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-left gap-2 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm nav-btn">Log In</a>
+                    <a href="register.html" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-sm nav-btn">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Split Layout Content -->
+    <div class="container-fluid p-0">
+        <div class="row g-0 split-layout">
+
+            <!-- Left: Image & Info Overlay (Hidden on Mobile) -->
+            <div class="col-lg-5 contact-image d-none d-lg-block">
+                <div class="position-absolute bottom-0 start-0 p-5 text-white" style="z-index: 2;">
+                    <h2 class="display-5 fw-bold mb-4">Let's create something audible.</h2>
+                    <div class="d-flex gap-3 mb-3 align-items-center">
+                        <i class="bi bi-geo-alt-fill fs-5 text-warning"></i>
+                        <span>123 Audio Lane, Sound City, NY 10012</span>
+                    </div>
+                    <div class="d-flex gap-3 mb-3 align-items-center">
+                        <i class="bi bi-envelope-fill fs-5 text-warning"></i>
+                        <span>hello@audiostudio.com</span>
+                    </div>
+                    <div class="d-flex gap-3 align-items-center">
+                        <i class="bi bi-telephone-fill fs-5 text-warning"></i>
+                        <span>+1 (555) 987-6543</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="col-lg-7 contact-content bg-light-subtle">
+                <div class="w-100 p-4 p-md-5" style="max-width: 700px;">
+
+                    <div class="mb-5 d-lg-none">
+                        <h1 class="fw-bold mb-2">Get in Touch</h1>
+                        <p class="text-muted">Start your audiobook journey today.</p>
+                    </div>
+
+                    <h2 class="fw-bold mb-4 d-none d-lg-block">Start Your Project</h2>
+
+                    <form class="card border-0 shadow-sm p-4 p-md-5 rounded-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">First Name</label>
+                                <input type="text" class="form-control" placeholder="John">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Doe">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Email Address</label>
+                                <input type="email" class="form-control" placeholder="name@example.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Project Type</label>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="form-check border rounded p-2 ps-5">
+                                            <input class="form-check-input" type="radio" name="projectType" id="type1"
+                                                checked>
+                                            <label class="form-check-label w-100" for="type1">Audiobook</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check border rounded p-2 ps-5">
+                                            <input class="form-check-input" type="radio" name="projectType" id="type2">
+                                            <label class="form-check-label w-100" for="type2">Podcast</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Message</label>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Tell us about your book... (Genre, Word Count, etc.)"></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill">Send
+                                    Message</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Info Section (Visible on Mobile & Desktop) -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-geo-alt"></i></div>
+                        <h5>Visit Us</h5>
+                        <p class="text-muted">123 Audio Lane,<br>Sound City, NY 10012</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-envelope"></i></div>
+                        <h5>Email Us</h5>
+                        <p class="text-muted">hello@audiostudio.com<br>support@audiostudio.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-clock"></i></div>
+                        <h5>Office Hours</h5>
+                        <p class="text-muted">Mon - Fri: 9am - 6pm<br>Sat: 10am - 2pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-0">
+        <div class="container-fluid p-0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1645456789012!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="d-block filter-grayscale"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="assets/logo.png" alt="AudioStudio">
+                        <div class="brand-text">
+                            <span class="brand-title">Audio</span>
+                            <span class="brand-subtitle">Studio</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50">Professional audiobook production services bridging the gap between.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Studio</a></li>
+                        <li class="mb-2"><a href="home-2.html">Voices</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Solutions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Connect</a></li>
+                        <li class="mb-2"><a href="pricing.html">Plans</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for tips on audiobook marketing.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center text-white-50">
+                <p class="mb-0">&copy; 2026 AudioStudio. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

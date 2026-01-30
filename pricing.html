@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans | AudioStudio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="AudioStudio">
+                <div class="brand-text">
+                    <span class="brand-title">Audio</span>
+                    <span class="brand-subtitle">Studio</span>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Voices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-left gap-2 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm nav-btn">Log In</a>
+                    <a href="register.html" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-sm nav-btn">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-theme-subtle py-5 text-center">
+        <div class="container py-4">
+            <span class="badge bg-primary rounded-pill mb-3 px-3 py-2">Transparent Pricing</span>
+            <h1 class="display-4 fw-bold">Production Plans</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">Choose a package that fits your book's length
+                and budget. No hidden royalty splits.</p>
+        </div>
+    </section>
+
+    <!-- Trusted Partners (Social Proof) -->
+    <section class="py-4 bg-white border-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap gap-5 align-items-center opacity-50">
+                <h5 class="fw-bold mb-0 text-secondary">Audible Approved</h5>
+                <h5 class="fw-bold mb-0 text-secondary">Apple Preferred</h5>
+                <h5 class="fw-bold mb-0 text-secondary">Amazon Quality</h5>
+                <h5 class="fw-bold mb-0 text-secondary">Spotify Ready</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-center">
+
+                <!-- Basic -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 p-4">
+                        <div class="text-center mb-4">
+                            <h4 class="fw-bold text-secondary">Indie Author</h4>
+                            <h2 class="display-5 fw-bold">$250</h2>
+                            <p class="text-muted small">Per Finished Hour (PFH)</p>
+                        </div>
+                        <ul class="list-unstyled mb-4 small">
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-success me-2"></i> Professional
+                                Casting (Tier 2 Narrators)</li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-success me-2"></i> Standard Editing &
+                                Mastering</li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-success me-2"></i> ACX Ready Files
+                            </li>
+                            <li class="mb-3 d-flex"><i class="bi bi-x-lg text-secondary me-2"></i> No Director</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-primary w-100 rounded-pill">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Professional (Highlighted) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-primary border-2 shadow h-100 p-4 position-relative pricing-card-popular">
+                        <div class="position-absolute top-0 start-50 translate-middle">
+                            <span class="badge bg-primary px-3 py-2 rounded-pill shadow-sm">Most Popular</span>
+                        </div>
+                        <div class="text-center mb-4 mt-2">
+                            <h4 class="fw-bold text-primary">Publisher Choice</h4>
+                            <h2 class="display-5 fw-bold">$400</h2>
+                            <p class="text-muted small">Per Finished Hour (PFH)</p>
+                        </div>
+                        <ul class="list-unstyled mb-4 small">
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-primary me-2 fw-bold"></i>
+                                <strong>Top-Tier Narrators (SAG-AFTRA)</strong>
+                            </li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-primary me-2"></i> Premium Editing &
+                                Proofing</li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-primary me-2"></i> Dedicated Project
+                                Manager</li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-primary me-2"></i> Distribution
+                                Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary w-100 rounded-pill shadow-sm">Choose Plan</a>
+                    </div>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 p-4">
+                        <div class="text-center mb-4">
+                            <h4 class="fw-bold text-dark">Full Production</h4>
+                            <h2 class="display-5 fw-bold">$650+</h2>
+                            <p class="text-muted small">Per Finished Hour (PFH)</p>
+                        </div>
+                        <ul class="list-unstyled mb-4 small">
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-success me-2"></i> Celebrity /
+                                Multi-Cast Options</li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-success me-2"></i> Sound Effects &
+                                Music Scoring</li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-success me-2"></i> Full Rights Buyout
+                            </li>
+                            <li class="mb-3 d-flex"><i class="bi bi-check-lg text-success me-2"></i> Marketing Package
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-dark w-100 rounded-pill">Contact Sales</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Comparison Table Link -->
+            <div class="text-center mt-5">
+                <p class="text-muted">Not sure what you need? <a href="#"
+                        class="text-primary text-decoration-none fw-bold">Download Full Rate Card</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light-subtle">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Common Questions</h2>
+            </div>
+            <div class="accordion accordion-flush bg-white rounded-4 shadow-sm" id="accordionFAQ">
+                <div class="accordion-item rounded-top-4">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+                            Do you take royalty shares?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-muted">
+                            Currently, we operate on a strictly "Work for Hire" basis (PFH). This means you own 100% of
+                            your audiobook's royalties once the project is paid for.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            How long does production take?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-muted">
+                            A standard 10-hour audiobook typically takes 4-6 weeks from the start of recording to final
+                            master delivery.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded-bottom-4">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            What if I don't like the narrator?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-muted">
+                            That's why we cast heavily upfront! You approve the narrator's audition before recording
+                            begins. Additionally, we provide "15-minute checkpoints" to ensure the tone is right early
+                            on.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="assets/logo.png" alt="AudioStudio">
+                        <div class="brand-text">
+                            <span class="brand-title">Audio</span>
+                            <span class="brand-subtitle">Studio</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50">Professional audiobook production services bridging the gap between.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Studio</a></li>
+                        <li class="mb-2"><a href="home-2.html">Voices</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Solutions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Connect</a></li>
+                        <li class="mb-2"><a href="pricing.html">Plans</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for tips on audiobook marketing.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center text-white-50">
+                <p class="mb-0">&copy; 2026 AudioStudio. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
