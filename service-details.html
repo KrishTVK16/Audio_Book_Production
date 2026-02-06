@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | Audio Book Production</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header (Identical) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="AudioStudio">
+                <div class="brand-text">
+                    <span class="brand-title">Audio</span>
+                    <span class="brand-subtitle">Studio</span>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Voices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-left gap-2 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm nav-btn">Log In</a>
+                    <a href="register.html" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-sm nav-btn d-none">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-light-subtle py-5">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Narration</li>
+                </ol>
+            </nav>
+            <h1 class="fw-bold mb-3">Professional Narration Service</h1>
+            <p class="lead text-muted">Bring your characters to life with industry-leading voice talent.</p>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <img src="https://placehold.co/800x400/6C4AB6/FFFFFF?text=Studio+Session" alt="Recording Session"
+                        class="img-fluid rounded-4 mb-4 w-100">
+
+                    <h3 class="fw-bold mb-3">Service Overview</h3>
+                    <p class="text-secondary mb-4">Our narration service connects you with over 100 verified
+                        professional voice actors. We handle everything from the initial casting call to the final
+                        recording session, ensuring that the tone, pacing, and emotional delivery match your vision
+                        perfectly.</p>
+
+                    <h3 class="fw-bold mb-3">What's Included?</h3>
+                    <div class="row g-3 mb-5">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Casting Director</h6>
+                                    <p class="small text-muted">Dedicated expert to help you choose the best voice.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Studio Rental</h6>
+                                    <p class="small text-muted">All recordings done in acoustically treated booths.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Live Direction</h6>
+                                    <p class="small text-muted">Option to sit in on sessions virtually.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Unlimited Retakes</h6>
+                                    <p class="small text-muted">We fix mispronunciations at no extra cost.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Accordion -->
+                    <h3 class="fw-bold mb-3">Frequently Asked Questions</h3>
+                    <div class="accordion" id="serviceFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    How do I choose a narrator?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#serviceFaq">
+                                <div class="accordion-body text-secondary">
+                                    We provide you with 3-5 custom auditions based on your script sample. You can listen
+                                    and choose the one that fits best.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Do I own the rights?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                                <div class="accordion-body text-secondary">
+                                    Yes, once the project is paid in full, you own 100% of the audio rights for
+                                    distribution.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    How long does it take?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                                <div class="accordion-body text-secondary">
+                                    A standard 10-hour audiobook typically takes 4-6 weeks from casting to final
+                                    delivery.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Pricing -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 sticky-top" style="top: 100px;">
+                        <h4 class="fw-bold mb-2">Pricing</h4>
+                        <p class="text-muted mb-4">Transparent rates based on finished hours.</p>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-medium">Standard Narrator</span>
+                                <span class="fw-bold">$250/hr</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-medium">Premium Narrator</span>
+                                <span class="fw-bold">$400/hr</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-medium">Celebrity Talent</span>
+                                <span class="fw-bold text-primary">Contact Us</span>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                            <a href="assets/downloads/brochure.pdf" class="btn btn-outline-secondary" download><i
+                                    class="bi bi-download"></i> Download Brochure</a>
+                        </div>
+
+                        <div class="mt-4 pt-4 border-top">
+                            <h6 class="fw-bold mb-3">Need Help?</h6>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center text-primary"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0 fw-medium">+1 (555) 123-4567</p>
+                                    <small class="text-muted">Mon-Fri, 9am-6pm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Identical) -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="assets/logo.png" alt="AudioStudio">
+                        <div class="brand-text">
+                            <span class="brand-title">Audio</span>
+                            <span class="brand-subtitle">Studio</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50">Professional audiobook production services bridging the gap between authors
+                        and listeners with studio-quality narration.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Studio</a></li>
+                        <li class="mb-2"><a href="home-2.html">Voices</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Solutions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Connect</a></li>
+                        <li class="mb-2"><a href="pricing.html">Plans</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for tips on audiobook marketing.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center text-white-50">
+                <p class="mb-0">&copy; 2026 AudioStudio. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

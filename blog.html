@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal | AudioStudio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body class="blog-page">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="AudioStudio">
+                <div class="brand-text">
+                    <span class="brand-title">Audio</span>
+                    <span class="brand-subtitle">Studio</span>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Voices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-left gap-2 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm nav-btn">Log In</a>
+                    <a href="register.html" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-sm nav-btn d-none">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Frame -->
+    <section class="bg-primary text-white py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <p class="mb-2 text-warning fw-bold text-uppercase">The Journal</p>
+                    <h1 class="display-4 fw-bold">Insights into Audio</h1>
+                    <p class="lead text-white-50 mb-0">Tips, tricks, and industry news for authors and narrators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Content Area -->
+                <div class="col-lg-8">
+
+                    <!-- Featured Post (Dominant) -->
+                    <div class="card border-0 shadow-sm overflow-hidden mb-5">
+                        <div class="row g-0">
+                            <div class="col-md-12">
+                                <img src="https://cdn.prod.website-files.com/685be7dcd32275d383065239/685be7dcd32275d383067276_Blog%20Cover_2023_01_%20How%20to%20Make%20an%20Audiobook_%2010%20Easy%20Steps%20for%20Beginners%20(1).webp"
+                                    class="img-fluid w-100" alt="Featured">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="p-4 p-md-5">
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">Production</span>
+                                        <span class="text-muted small ms-2">Jan 25, 2026</span>
+                                    </div>
+                                    <h2 class="fw-bold mb-3"><a href="blog-details.html"
+                                            class="text-decoration-none text-dark">How to Prepare Your Manuscript for
+                                            Narration</a></h2>
+                                    <p class="text-secondary mb-4">Before you hand off your script to a narrator, there
+                                        are crucial steps you need to take to ensure a smooth recording process. Learn
+                                        about pronunciation guides, character scripts, and highlighting...</p>
+                                    <a href="blog-details.html" class="btn btn-outline-primary rounded-pill px-4">Read
+                                        Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regular Grid -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://blog-cdn.reedsy.com/directories/admin/featured_image/529/audiobook-marketing-59e3d3.webp"
+                                    class="card-img-top" alt="Img">
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-dark mb-2">Marketing</span>
+                                    <h4 class="fw-bold mb-2"><a href="blog-details.html"
+                                            class="text-decoration-none text-dark">5 Ways to Market Your Audiobook</a>
+                                    </h4>
+                                    <p class="text-muted small"> Strategies to boost your sales on Audible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.ctfassets.net/f4cbid0mhigx/1Aq8RDW5EZbkbdVwwKmpQg/0ef91254515f8c390f6e759f41103782/adobestock_2980931252.jpeg?fm=&w=3840&q=75"
+                                    class="card-img-top" alt="Img">
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-dark mb-2">Tech</span>
+                                    <h4 class="fw-bold mb-2"><a href="blog-details.html"
+                                            class="text-decoration-none text-dark">Best Microphones for Home Studios in
+                                            2026</a></h4>
+                                    <p class="text-muted small">Our top picks for every budget.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Search -->
+                    <div class="card border-0 shadow-sm p-4 mb-4">
+                        <h5 class="fw-bold mb-3">Search</h5>
+                        <form class="d-flex gap-2">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="card border-0 shadow-sm p-4 mb-4">
+                        <h5 class="fw-bold mb-3">Categories</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#"
+                                    class="text-secondary d-flex justify-content-between"><span>Production</span> <span
+                                        class="badge bg-light text-dark">12</span></a></li>
+                            <li class="mb-2"><a href="#"
+                                    class="text-secondary d-flex justify-content-between"><span>Marketing</span> <span
+                                        class="badge bg-light text-dark">8</span></a></li>
+                            <li class="mb-2"><a href="#"
+                                    class="text-secondary d-flex justify-content-between"><span>Technology</span> <span
+                                        class="badge bg-light text-dark">5</span></a></li>
+                            <li class="mb-2"><a href="#"
+                                    class="text-secondary d-flex justify-content-between"><span>Interviews</span> <span
+                                        class="badge bg-light text-dark">4</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter (Dark) -->
+                    <div class="card bg-dark text-white p-4">
+                        <h5 class="fw-bold mb-3">Subscribe</h5>
+                        <p class="small text-white-50 mb-3">Get the latest audio news directly to your inbox.</p>
+                        <form>
+                            <input type="email" class="form-control mb-2" placeholder="Your email">
+                            <button class="btn btn-primary w-100">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="assets/logo.png" alt="AudioStudio">
+                        <div class="brand-text">
+                            <span class="brand-title">Audio</span>
+                            <span class="brand-subtitle">Studio</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50">Professional audiobook production services bridging the gap between
+                        authors.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Studio</a></li>
+                        <li class="mb-2"><a href="home-2.html">Voices</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Solutions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Connect</a></li>
+                        <li class="mb-2"><a href="pricing.html">Plans</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for tips on audiobook marketing.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center text-white-50">
+                <p class="mb-0">&copy; 2026 AudioStudio. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

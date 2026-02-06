@@ -1,0 +1,24 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="spotifyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1DB954;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1ED760;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="spotifyRadial">
+      <stop offset="0%" style="stop-color:#1ED760;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1DB954;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <rect width="120" height="40" rx="8" fill="url(#spotifyGrad)"/>
+  <g transform="translate(60, 20)">
+    <circle cx="0" cy="0" r="10" fill="white"/>
+    <circle cx="0" cy="0" r="8" fill="url(#spotifyRadial)"/>
+    <path d="M-5 -3 Q0 -5, 5 -3" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M-6 0 Q0 -2, 6 0" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M-5 3 Q0 1, 5 3" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="-8" cy="-8" r="2" fill="white" opacity="0.7"/>
+    <circle cx="8" cy="-8" r="2" fill="white" opacity="0.7"/>
+    <circle cx="-8" cy="8" r="2" fill="white" opacity="0.7"/>
+    <circle cx="8" cy="8" r="2" fill="white" opacity="0.7"/>
+  </g>
+</svg>

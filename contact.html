@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect | AudioStudio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <style>
+        .split-layout {
+            min-height: calc(100vh - 76px);
+            /* Minus navbar height approx */
+        }
+
+        .contact-image {
+            background: url('data:image/jpeg;base64,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') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .contact-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(15, 23, 42, 0.4);
+        }
+
+        .contact-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Sticky) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="AudioStudio">
+                <div class="brand-text">
+                    <span class="brand-title">Audio</span>
+                    <span class="brand-subtitle">Studio</span>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Voices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Connect</a></li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-left gap-2 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm nav-btn">Log In</a>
+                    <a href="register.html" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-sm nav-btn d-none">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Split Layout Content -->
+    <div class="container-fluid p-0">
+        <div class="row g-0 split-layout">
+
+            <!-- Left: Image & Info Overlay (Hidden on Mobile) -->
+            <div class="col-lg-5 contact-image d-none d-lg-block">
+                <div class="bottom-0 start-0 p-5 text-white" style="z-index: 2;">
+                    <h2 class="display-5 fw-bold mb-4">Let's create something audible.</h2>
+                    <div class="d-flex gap-3 mb-3 align-items-center">
+                        <i class="bi bi-geo-alt-fill fs-5 text-warning"></i>
+                        <span>123 Audio Lane, Sound City, NY 10012</span>
+                    </div>
+                    <div class="d-flex gap-3 mb-3 align-items-center">
+                        <i class="bi bi-envelope-fill fs-5 text-warning"></i>
+                        <span>hello@audiostudio.com</span>
+                    </div>
+                    <div class="d-flex gap-3 align-items-center">
+                        <i class="bi bi-telephone-fill fs-5 text-warning"></i>
+                        <span>+1 (555) 987-6543</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="col-lg-7 contact-content bg-light-subtle">
+                <div class="w-100 p-4 p-md-5" style="max-width: 700px;">
+
+                    <div class="mb-5 d-lg-none">
+                        <h1 class="fw-bold mb-2">Get in Touch</h1>
+                        <p class="text-muted">Start your audiobook journey today.</p>
+                    </div>
+
+                    <h2 class="fw-bold mb-4 d-none d-lg-block">Start Your Project</h2>
+
+                    <form class="card border-0 shadow-sm p-4 p-md-5 rounded-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">First Name</label>
+                                <input type="text" class="form-control" placeholder="John">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Doe">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Email Address</label>
+                                <input type="email" class="form-control" placeholder="name@example.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Project Type</label>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="form-check border rounded p-2 ps-5">
+                                            <input class="form-check-input" type="radio" name="projectType" id="type1"
+                                                checked>
+                                            <label class="form-check-label w-100" for="type1">Audiobook</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check border rounded p-2 ps-5">
+                                            <input class="form-check-input" type="radio" name="projectType" id="type2">
+                                            <label class="form-check-label w-100" for="type2">Podcast</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Message</label>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Tell us about your book... (Genre, Word Count, etc.)"></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill">Send
+                                    Message</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Info Section (Visible on Mobile & Desktop) -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-geo-alt"></i></div>
+                        <h5>Visit Us</h5>
+                        <p class="text-muted">123 Audio Lane,<br>Sound City, NY 10012</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-envelope"></i></div>
+                        <h5>Email Us</h5>
+                        <p class="text-muted">hello@audiostudio.com<br>support@audiostudio.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-clock"></i></div>
+                        <h5>Office Hours</h5>
+                        <p class="text-muted">Mon - Fri: 9am - 6pm<br>Sat: 10am - 2pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-0">
+        <div class="container-fluid p-0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1645456789012!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="d-block filter-grayscale"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="assets/logo.png" alt="AudioStudio">
+                        <div class="brand-text">
+                            <span class="brand-title">Audio</span>
+                            <span class="brand-subtitle">Studio</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50">Professional audiobook production services bridging the gap between.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Studio</a></li>
+                        <li class="mb-2"><a href="home-2.html">Voices</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Solutions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Connect</a></li>
+                        <li class="mb-2"><a href="pricing.html">Plans</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for tips on audiobook marketing.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center text-white-50">
+                <p class="mb-0">&copy; 2026 AudioStudio. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

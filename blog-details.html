@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details | Audio Book Production</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header (Identical) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="AudioStudio">
+                <div class="brand-text">
+                    <span class="brand-title">Audio</span>
+                    <span class="brand-subtitle">Studio</span>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Voices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-left gap-2 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm nav-btn">Log In</a>
+                    <a href="register.html" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-sm nav-btn d-none">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header (Breadcrumb only) -->
+    <section class="bg-light-subtle py-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">How to Prepare...</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Main Post -->
+                <div class="col-lg-8">
+                    <span class="badge bg-primary mb-2">Production Tips</span>
+                    <h1 class="fw-bold mb-3">How to Prepare Your Manuscript for Narration</h1>
+                    <div class="d-flex align-items-center gap-3 mb-4 text-muted small">
+                        <span><i class="bi bi-person"></i> By Alex Morgan</span>
+                        <span><i class="bi bi-calendar"></i> Jan 28, 2026</span>
+                        <span><i class="bi bi-clock"></i> 5 min read</span>
+                    </div>
+
+                    <img src="https://placehold.co/800x400/6C4AB6/FFFFFF?text=Article+Image"
+                        class="img-fluid rounded-4 mb-4" alt="Article Image">
+
+                    <div class="article-content">
+                        <p class="lead">Converting a book into audio isn't as simple as reading it out loud. Certain
+                            elements like visual charts, footnotes, and complex dialogue tags need adjustment.</p>
+
+                        <h3 class="fw-bold mt-4 mb-3">1. Remove Visual References</h3>
+                        <p>Phrases like "see the chart below" or "as shown in the image" don't translate to audio.
+                            Rewrite these sections to be descriptive or refer to a companion PDF.</p>
+
+                        <h3 class="fw-bold mt-4 mb-3">2. Simplify Dialogue Tags</h3>
+                        <p>In print, "he said" and "she whispered" help clarify who is speaking. In audio, a skilled
+                            narrator uses distinct character voices, making excessive tags redundant.</p>
+
+                        <blockquote class="blockquote border-start border-4 border-primary ps-4 my-4 fst-italic">
+                            "A great audiobook feels like a performance, not a recitation. Giving the narrator freedom
+                            is key."
+                        </blockquote>
+
+                        <h3 class="fw-bold mt-4 mb-3">3. Pronunciation Guide</h3>
+                        <p>Create a list of all names, places, and made-up words with their phonetic spellings. This
+                            saves hours of back-and-forth corrections later.</p>
+                    </div>
+
+                    <!-- Share -->
+                    <div class="border-top border-bottom py-3 mt-5 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Share this post:</span>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-facebook"></i></button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-twitter-x"></i></button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-linkedin"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Author Widget -->
+                    <div class="card border-0 bg-light-subtle p-4 mb-4 text-center">
+                        <div class="mx-auto rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold mb-3"
+                            style="width: 80px; height: 80px; font-size: 2rem;">AM</div>
+                        <h5 class="fw-bold">Alex Morgan</h5>
+                        <p class="text-secondary small">Senior Production Manager at AudioStudio. Helping authors sound
+                            their best since 2015.</p>
+                    </div>
+
+                    <!-- Related Posts -->
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Related Posts</h5>
+                        <div class="d-flex flex-column gap-3">
+                            <a href="#" class="d-flex gap-3 text-decoration-none text-reset align-items-center">
+                                <img src="https://placehold.co/100x100/FFB703/333333?text=Thumb" class="rounded-3"
+                                    alt="Thumb" style="width: 80px; height: 80px; object-fit: cover;">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Choosing a Mic</h6>
+                                    <small class="text-muted">Jan 15, 2026</small>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex gap-3 text-decoration-none text-reset align-items-center">
+                                <img src="https://placehold.co/100x100/0F172A/FFFFFF?text=Thumb" class="rounded-3"
+                                    alt="Thumb" style="width: 80px; height: 80px; object-fit: cover;">
+                                <div>
+                                    <h6 class="fw-bold mb-1">ACX Standards 101</h6>
+                                    <small class="text-muted">Jan 10, 2026</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div>
+                        <h5 class="fw-bold mb-3">Tags</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#" class="badge bg-light text-dark text-decoration-none border">Editing</a>
+                            <a href="#" class="badge bg-light text-dark text-decoration-none border">Narration</a>
+                            <a href="#" class="badge bg-light text-dark text-decoration-none border">Marketing</a>
+                            <a href="#" class="badge bg-light text-dark text-decoration-none border">Budgeting</a>
+                            <a href="#" class="badge bg-light text-dark text-decoration-none border">Kindle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Identical) -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="assets/logo.png" alt="AudioStudio">
+                        <div class="brand-text">
+                            <span class="brand-title">Audio</span>
+                            <span class="brand-subtitle">Studio</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50">Professional audiobook production services bridging the gap between authors
+                        and listeners with studio-quality narration.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Studio</a></li>
+                        <li class="mb-2"><a href="home-2.html">Voices</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Solutions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Connect</a></li>
+                        <li class="mb-2"><a href="pricing.html">Plans</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for tips on audiobook marketing.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center text-white-50">
+                <p class="mb-0">&copy; 2026 AudioStudio. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

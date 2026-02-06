@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Book Production | Niche Narration</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header (Identical) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="AudioStudio">
+                <div class="brand-text">
+                    <span class="brand-title">Audio</span>
+                    <span class="brand-subtitle">Studio</span>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Voices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-left gap-2 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm nav-btn">Log In</a>
+                    <a href="register.html" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-sm nav-btn d-none">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Minimal Hero -->
+    <section class="hero-section text-center bg-light-subtle py-5">
+        <div class="container py-4">
+            <span class="badge bg-secondary text-dark mb-3 rounded-pill px-3">Specialized Studios</span>
+            <h1 class="display-4 fw-bold mb-3">Narrators for Every Genre</h1>
+            <p class="lead text-muted mb-4 mx-auto" style="max-width: 600px;">Specific voices for Fiction, Business, and
+                Educational content. Find your perfect match instantly.</p>
+            <form class="d-flex justify-content-center gap-2 mx-auto" style="max-width: 400px;">
+                <input type="text" class="form-control" placeholder="Search by genre (e.g., Sci-Fi)...">
+                <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Trusted Partners (Social Proof) -->
+    <section class="py-4 bg-white border-bottom">
+        <div class="container">
+            <p class="text-center small text-muted text-uppercase fw-bold mb-4">Trusted by Leading Platforms</p>
+            <div class="trusted-partners">
+                <div class="partner-logo">
+                    <img src="assets/img/logo-audible.svg" alt="Audible">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/logo-apple-books.svg" alt="Apple Books">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/logo-amazon.svg" alt="Amazon">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/logo-findaway.svg" alt="Findaway Voices">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/logo-spotify.svg" alt="Spotify">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voice Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-primary text-white border-0 h-100 p-4 text-center">
+                        <div class="display-5 mb-3"><i class="bi bi-book"></i></div>
+                        <h3>Fiction & Novels</h3>
+                        <p class="opacity-75">Emotive storytelling for immersive experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white border-0 h-100 p-4 text-center">
+                        <div class="display-5 mb-3"><i class="bi bi-briefcase"></i></div>
+                        <h3>Business & Biography</h3>
+                        <p class="opacity-75">Authoritative and clear professional tones.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-dark border-0 h-100 p-4 text-center">
+                        <div class="display-5 mb-3"><i class="bi bi-lightbulb"></i></div>
+                        <h3>Self-Help & Edu</h3>
+                        <p class="opacity-75">Inspiring and engaging educational narration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Narrators (Grid) -->
+    <section class="py-5 bg-light-subtle">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h2>Top Voices This Month</h2>
+                <a href="services.html" class="btn btn-link">View All Narrators</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center fw-bold"
+                                    style="width: 50px; height: 50px;">EL</div>
+                                <div>
+                                    <h5 class="mb-0">Elara L.</h5>
+                                    <small class="text-muted">Fiction • English (UK)</small>
+                                </div>
+                            </div>
+                            <audio controls class="w-100 mb-2">
+                                <source src="assets/audio/demo1.mp3" type="audio/mpeg">
+                            </audio>
+                            <a href="#" class="btn btn-sm btn-outline-primary w-100">Book Elara</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold"
+                                    style="width: 50px; height: 50px;">MK</div>
+                                <div>
+                                    <h5 class="mb-0">Marcus K.</h5>
+                                    <small class="text-muted">Business • English (US)</small>
+                                </div>
+                            </div>
+                            <audio controls class="w-100 mb-2">
+                                <source src="assets/audio/demo2.mp3" type="audio/mpeg">
+                            </audio>
+                            <a href="#" class="btn btn-sm btn-outline-primary w-100">Book Marcus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="rounded-circle bg-dark text-white d-flex align-items-center justify-content-center fw-bold"
+                                    style="width: 50px; height: 50px;">SJ</div>
+                                <div>
+                                    <h5 class="mb-0">Sarah J.</h5>
+                                    <small class="text-muted">Children • English (US)</small>
+                                </div>
+                            </div>
+                            <audio controls class="w-100 mb-2">
+                                <source src="assets/audio/demo3.mp3" type="audio/mpeg">
+                            </audio>
+                            <a href="#" class="btn btn-sm btn-outline-primary w-100">Book Sarah</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <h1 class="display-6 text-primary mb-2"><i class="bi bi-headphones"></i></h1>
+                    <h4>Studio Quality</h4>
+                    <p class="text-muted">Recorded in professional sound booths.</p>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="display-6 text-primary mb-2"><i class="bi bi-shield-check"></i></h1>
+                    <h4>ACX Guarantee</h4>
+                    <p class="text-muted">100% compliant with Audible technical standards.</p>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="display-6 text-primary mb-2"><i class="bi bi-clock-history"></i></h1>
+                    <h4>Fast Turnaround</h4>
+                    <p class="text-muted">We deliver finished audio in weeks, not months.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section class="py-5 bg-light-subtle">
+        <div class="container text-center">
+            <h2 class="mb-5">Transparent Pricing</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h5 class="text-muted">Per Finished Hour</h5>
+                        <h2 class="fw-bold my-3">$250</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-lg text-primary"></i> Pro Narration</li>
+                            <li class="mb-2"><i class="bi bi-check-lg text-primary"></i> Basic Editing</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-outline-primary w-100">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-primary border-2 shadow p-4">
+                        <span class="badge bg-primary position-absolute top-0 start-50 translate-middle">Most
+                            Popular</span>
+                        <h5 class="text-muted mt-2">Full Production</h5>
+                        <h2 class="fw-bold my-3">$400</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-lg text-primary"></i> Pro Narration</li>
+                            <li class="mb-2"><i class="bi bi-check-lg text-primary"></i> Editing & Mastering</li>
+                            <li class="mb-2"><i class="bi bi-check-lg text-primary"></i> Distribution Help</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-primary w-100">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2>Ready to find your voice?</h2>
+            <p class="lead text-muted mb-4">Book a free 15-minute consultation with our casting director.</p>
+            <a href="contact.html" class="btn btn-lg btn-primary">Book a Call</a>
+        </div>
+    </section>
+
+    <!-- Footer (Identical) -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="assets/logo.png" alt="AudioStudio">
+                        <div class="brand-text">
+                            <span class="brand-title">Audio</span>
+                            <span class="brand-subtitle">Studio</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50">Professional audiobook production services bridging the gap between authors
+                        and listeners with studio-quality narration.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Studio</a></li>
+                        <li class="mb-2"><a href="home-2.html">Voices</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Solutions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Connect</a></li>
+                        <li class="mb-2"><a href="pricing.html">Plans</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for tips on audiobook marketing.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center text-white-50">
+                <p class="mb-0">&copy; 2026 AudioStudio. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
