@@ -450,11 +450,11 @@ footer .brand-title {
     .trusted-partners {
         gap: 2rem;
     }
-    
+
     .partner-logo {
         padding: 6px;
     }
-    
+
     .partner-logo img {
         height: 38px;
     }
@@ -464,11 +464,11 @@ footer .brand-title {
     .trusted-partners {
         gap: 1.5rem;
     }
-    
+
     .partner-logo {
         padding: 4px;
     }
-    
+
     .partner-logo img {
         height: 32px;
     }
@@ -625,7 +625,7 @@ footer .brand-title {
         padding: 2rem;
         max-width: 90%;
     }
-    
+
     .contact-image .bottom-0.start-0.p-5.text-white h2 {
         font-size: 1.8rem;
     }
@@ -638,7 +638,7 @@ footer .brand-title {
         padding: 1.5rem;
         max-width: 95%;
     }
-    
+
     .contact-image .bottom-0.start-0.p-5.text-white h2 {
         font-size: 1.5rem;
     }
@@ -650,11 +650,11 @@ footer .brand-title {
         margin: 20px auto;
         padding: 1rem;
     }
-    
+
     .contact-image .bottom-0.start-0.p-5.text-white h2 {
         font-size: 1.3rem;
     }
-    
+
     .contact-image .bottom-0.start-0.p-5.text-white .d-flex {
         padding: 0.75rem;
     }
@@ -708,7 +708,7 @@ footer .brand-title {
     .bg-light-subtle .row.g-4 .card {
         height: 100%;
     }
-    
+
     .bg-light-subtle .card .btn {
         max-width: 180px;
     }
@@ -802,6 +802,7 @@ footer .brand-title {
 
 /* Learn More Buttons - Tab & Mobile Centering Only */
 @media (max-width: 991px) {
+
     .btn-outline-primary.rounded-pill,
     .btn-outline-dark.rounded-pill {
         display: block;
@@ -812,6 +813,7 @@ footer .brand-title {
 }
 
 @media (max-width: 767px) {
+
     .btn-outline-primary.rounded-pill,
     .btn-outline-dark.rounded-pill {
         max-width: 180px;
@@ -820,6 +822,7 @@ footer .brand-title {
 }
 
 @media (max-width: 576px) {
+
     .btn-outline-primary.rounded-pill,
     .btn-outline-dark.rounded-pill {
         max-width: 160px;
@@ -856,11 +859,11 @@ footer .brand-title {
     .services-page .container {
         text-align: center;
     }
-    
+
     .services-page .row {
         justify-content: center;
     }
-    
+
     .services-page .col-lg-6,
     .services-page .col-lg-5,
     .services-page .col-lg-7 {
@@ -869,7 +872,7 @@ footer .brand-title {
         align-items: center;
         text-align: center;
     }
-    
+
     .services-page h2,
     .services-page h6 {
         text-align: center;
@@ -880,7 +883,7 @@ footer .brand-title {
     .services-page .container {
         padding: 0 15px;
     }
-    
+
     .services-page .col-lg-6,
     .services-page .col-lg-5,
     .services-page .col-lg-7 {
@@ -893,11 +896,11 @@ footer .brand-title {
     .services-page .container {
         padding: 0 10px;
     }
-    
+
     .services-page .row {
         gap: 2rem;
     }
-    
+
     .services-page .col-lg-6,
     .services-page .col-lg-5,
     .services-page .col-lg-7 {
@@ -941,7 +944,7 @@ footer .brand-title {
     .bg-primary .container.py-4 {
         padding: 2rem 1rem;
     }
-    
+
     .bg-primary .col-lg-8 {
         max-width: 100%;
         text-align: center;
@@ -952,7 +955,7 @@ footer .brand-title {
     .bg-primary .container.py-4 {
         padding: 1.5rem 0.75rem;
     }
-    
+
     .bg-primary .col-lg-8 h1 {
         font-size: 2.5rem;
     }
@@ -962,11 +965,11 @@ footer .brand-title {
     .bg-primary .container.py-4 {
         padding: 1rem 0.5rem;
     }
-    
+
     .bg-primary .col-lg-8 h1 {
         font-size: 2rem;
     }
-    
+
     .bg-primary .col-lg-8 .lead {
         font-size: 1rem;
     }
@@ -977,11 +980,11 @@ footer .brand-title {
     .blog-page .row.g-5 {
         flex-direction: column;
     }
-    
+
     .blog-page .col-lg-8 {
         order: 2;
     }
-    
+
     .blog-page .col-lg-4 {
         order: 1;
     }
@@ -991,7 +994,7 @@ footer .brand-title {
     .blog-page .row.g-5 {
         gap: 2rem;
     }
-    
+
     .blog-page .col-lg-4 {
         margin-bottom: 2rem;
     }
@@ -1001,7 +1004,7 @@ footer .brand-title {
     .blog-page .row.g-5 {
         gap: 1.5rem;
     }
-    
+
     .blog-page .col-lg-4 {
         margin-bottom: 1.5rem;
     }
@@ -1212,6 +1215,7 @@ footer h5 {
         gap: 4px !important;
     }
 }
+
 .hero-btn-demos {
     line-height: 30px !important;
 }
@@ -1227,6 +1231,7 @@ footer h5 {
     color: #f8f9fa;
     border-color: #f8f9fa;
 }
+
 [data-theme='dark'] .btn-outline-dark:hover {
     background-color: #f8f9fa;
     color: #212529;
@@ -1237,4 +1242,62 @@ footer h5 {
     height: 250px;
     width: 100%;
     object-fit: cover;
+}
+
+/* Fix pricing card text in dark mode */
+[data-theme='dark'] .card {
+    color: #e2e8f0;
+    /* Ensure generic text (like list items) is light */
+}
+
+[data-theme='dark'] .card .text-secondary,
+[data-theme='dark'] .card .text-muted,
+[data-theme='dark'] .text-muted {
+    /* Global text-muted fix for dark mode */
+    color: #adb5bd !important;
+}
+
+[data-theme='dark'] .card .text-dark {
+    color: #f8f9fa !important;
+}
+
+/* Ensure partner logos are visible in dark mode by processing them */
+[data-theme='dark'] .partner-logo {
+    filter: none !important;
+    /* Remove parent grayscale/brightness to prevent conflict */
+}
+
+[data-theme='dark'] .partner-logo img {
+    /* filter: brightness(0) invert(1) !important; REMOVED: Icons have built-in backgrounds */
+    opacity: 0.9 !important;
+}
+
+/* Specific fix for Trusted Partners text */
+[data-theme='dark'] .trusted-partners-section .text-muted,
+[data-theme='dark'] section.bg-light-subtle .text-muted.text-uppercase.fw-bold {
+    color: #94a3b8 !important;
+}
+
+/* Connect Page Dark Mode Overrides */
+[data-theme='dark'] .contact-content.bg-light-subtle {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%) !important;
+    border-left-color: #A78BFA;
+}
+
+[data-theme='dark'] .contact-content.bg-light-subtle .card {
+    background: rgba(30, 41, 59, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] .contact-content.bg-light-subtle h1,
+[data-theme='dark'] .contact-content.bg-light-subtle h2 {
+    color: #A78BFA;
+}
+
+[data-theme='dark'] .contact-content.bg-light-subtle label {
+    color: #E2E8F0;
+}
+
+[data-theme='dark'] .contact-content.bg-light-subtle .form-check-label {
+    color: #E2E8F0;
 }
