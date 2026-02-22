@@ -80,6 +80,20 @@
     border-color: var(--border-color);
 }
 
+/* Secondary Color Utilities */
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Star Rating Secondary Color */
+.text-warning {
+    color: var(--secondary-color) !important;
+}
+
 [data-theme="dark"] .accordion-button {
     background-color: var(--card-bg);
     color: var(--text-color);
@@ -119,6 +133,7 @@
 
 [data-theme="dark"] .nav-link.active {
     color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
     font-weight: 700;
 }
 
@@ -173,6 +188,21 @@ a:hover {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     color: #0F172A;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #0F172A;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
 }
 
 .btn-outline-primary {
@@ -303,13 +333,23 @@ footer .brand-title {
 
 .nav-link {
     color: var(--navbar-text);
-    font-weight: 500;
-    margin: 0 10px;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 16px !important;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: var(--transition);
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
     color: var(--primary-color);
+    background-color: rgba(108, 74, 182, 0.05);
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+    border-color: var(--secondary-color) !important;
+    background-color: transparent;
 }
 
 /* Theme Toggle */
