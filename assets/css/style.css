@@ -24,8 +24,8 @@
     --font-heading: 'Sora', sans-serif;
     --font-body: 'Source Sans 3', sans-serif;
 
-    /* Footer Background (Fixed for Dark Mode) */
-    --footer-bg: #0F172A;
+    /* Footer Background */
+    --footer-bg: #FFFFFF;
 
     /* Sidebar Background */
     --sidebar-bg: #0F172A;
@@ -321,11 +321,19 @@ a:hover {
 
 /* Footer Logo Adjustment */
 footer .navbar-brand {
-    color: #fff;
+    color: var(--navbar-text);
     margin-bottom: 1rem;
 }
 
+[data-theme="dark"] footer .navbar-brand {
+    color: #fff;
+}
+
 footer .brand-title {
+    color: var(--navbar-text);
+}
+
+[data-theme="dark"] footer .brand-title {
     color: #fff;
 }
 
@@ -729,12 +737,12 @@ footer .brand-title {
 }
 
 /* Pricing Cards Button Alignment */
-.bg-light-subtle .card {
+.bg-light-subtle .card:not(.auth-card) {
     display: flex;
     flex-direction: column;
 }
 
-.bg-light-subtle .card .btn {
+.bg-light-subtle .card:not(.auth-card) .btn {
     margin-top: auto;
     max-width: 200px;
     width: auto !important;
@@ -745,17 +753,17 @@ footer .brand-title {
 
 /* Ensure consistent card heights for button alignment */
 @media (min-width: 768px) {
-    .bg-light-subtle .row.g-4 .card {
+    .bg-light-subtle .row.g-4 .card:not(.auth-card) {
         height: 100%;
     }
 
-    .bg-light-subtle .card .btn {
+    .bg-light-subtle .card:not(.auth-card) .btn {
         max-width: 180px;
     }
 }
 
 @media (min-width: 992px) {
-    .bg-light-subtle .card .btn {
+    .bg-light-subtle .card:not(.auth-card) .btn {
         max-width: 160px;
     }
 }
@@ -1118,11 +1126,19 @@ audio {
 /* Footer */
 footer {
     background-color: var(--footer-bg);
-    color: #F8FAFC;
+    color: var(--text-color);
     padding: 60px 0 20px;
 }
 
+[data-theme="dark"] footer {
+    color: #F8FAFC;
+}
+
 footer a {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] footer a {
     color: #CBD5E1;
 }
 
@@ -1131,8 +1147,22 @@ footer a:hover {
 }
 
 footer h5 {
-    color: #fff;
+    color: var(--text-color);
     margin-bottom: 20px;
+}
+
+[data-theme="dark"] footer h5 {
+    color: #fff;
+}
+
+/* Override text-white-50 for light mode footer */
+[data-theme="light"] footer .text-white-50 {
+    color: var(--text-color) !important;
+    opacity: 0.7;
+}
+
+[data-theme="light"] footer .border-secondary {
+    border-color: var(--border-color) !important;
 }
 
 /* Dashboard Sidebar */
